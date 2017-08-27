@@ -600,6 +600,12 @@ service hvdcp_opti /system/bin/hvdcp_opti
     user root
     group root
 
+service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
+    class late_start
+    user system
+    group system
+    writepid /dev/cpuset/system-background/tasks
+
 service per_mgr /system/bin/pm-service
     class core
     user system
