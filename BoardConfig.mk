@@ -45,7 +45,7 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8952
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 ramoops_memreserve=4M
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 ramoops_memreserve=4M androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x00000100
@@ -58,7 +58,7 @@ TARGET_KERNEL_CONFIG := lineageos_kenzo_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+#BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := kate,kenzo
@@ -89,7 +89,7 @@ AUDIO_FEATURE_ENABLED_VORBIS_OFFLOAD := true
 AUDIO_FEATURE_ENABLED_WMA_OFFLOAD := true
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
+#USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
@@ -154,7 +154,7 @@ SF_VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 
 # Encryption
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -224,7 +224,7 @@ TARGET_RIL_VARIANT := caf
 
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Wifi
 WPA_SUPPLICANT_VERSION      := VER_0_8_X

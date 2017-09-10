@@ -167,8 +167,8 @@ PRODUCT_PACKAGES += \
     memtrack.msm8952
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
+#PRODUCT_PACKAGES += \
+#    XiaomiDoze
 
 # Face detection extension
 PRODUCT_PACKAGES += \
@@ -223,9 +223,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
 
 # IPACM
-PRODUCT_PACKAGES += \
-    IPACM_cfg.xml \
-    ipacm
+#PRODUCT_PACKAGES += \
+#    IPACM_cfg.xml \
+#    ipacm
 
 # GNSS HAL
 PRODUCT_PACKAGES += \

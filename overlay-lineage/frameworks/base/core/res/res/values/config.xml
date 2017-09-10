@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    <!--<bool name="config_intrusiveBatteryLed">true</bool>-->
 
     <!-- Hardware keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -31,7 +31,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">83</integer>
+    <!--<integer name="config_deviceHardwareKeys">83</integer>-->
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -45,7 +45,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">64</integer>
+    <!--<integer name="config_deviceHardwareWakeKeys">64</integer>-->
 
     <!-- Control the behavior when the user long presses the app switch button.
             0 - Nothing
@@ -57,6 +57,6 @@
          This needs to match the constants in
          services/core/java/com/android/server/policy/policy/impl/PhoneWindowManager.java
     -->
-    <integer name="config_longPressOnAppSwitchBehavior">1</integer>
+    <!--<integer name="config_longPressOnAppSwitchBehavior">1</integer>-->
 
 </resources>
