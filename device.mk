@@ -221,6 +221,10 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     ipacm
 
+# GNSS HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
+
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
