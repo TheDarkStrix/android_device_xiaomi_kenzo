@@ -238,8 +238,8 @@ PRODUCT_PACKAGES += \
     android.hardware.health@1.0
 
 # HIDL
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Heap
 PRODUCT_PROPERTY_OVERRIDES += \
